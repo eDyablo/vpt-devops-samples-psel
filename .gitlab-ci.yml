@@ -2,14 +2,3 @@ include:
 - file: python/package-pipeline.gitlab-ci.yml
   project: devops/tools/ci
   ref: $CI_LIBRARY_REF_NAME
-
-publish package:
-  extends: .python job
-  stage: deploy
-  script:
-  - >-
-    python -m twine
-    upload dist/*
-    --non-interactive
-  variables:
-    TWINE_REPOSITORY_URL: https://artifactory.gtl.net/artifactory/api/pypi/pypi-local
