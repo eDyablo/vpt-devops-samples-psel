@@ -5,4 +5,4 @@ services:
     volumes:
     - .:/var/workspace:rw
     working_dir: /var/workspace
-    command: sh
+    command: bash

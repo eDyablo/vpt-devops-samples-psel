@@ -6,4 +6,3 @@ build:
   image: ${ARTIFACTORY_URL}/dkr/devops-tools-python-job-runner
   script:
   - python -m build
-  
