@@ -1,0 +1,8 @@
+version: '3'
+services:
+  terminal:
+    image: dkr.gtl.net/dkr/devops-tools-python-job-runner
+    volumes:
+    - .:/var/workspace:rw
+    working_dir: /var/workspace
+    command: sh

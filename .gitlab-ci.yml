@@ -1,0 +1,9 @@
+build:
+  stage: build
+  artifacts:
+    paths:
+    - dist
+  image: ${ARTIFACTORY_URL}/dkr/devops-tools-python-job-runner
+  script:
+  - python -m build
+  
