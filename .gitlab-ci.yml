@@ -1,8 +1,4 @@
-build:
-  stage: build
-  artifacts:
-    paths:
-    - dist
-  image: ${ARTIFACTORY_URL}/dkr/devops-tools-python-job-runner
-  script:
-  - python -m build
+include:
+- file: python/package-pipeline.gitlab-ci.yml
+  project: devops/tools/ci
+  ref: $CI_LIBRARY_REF_NAME
