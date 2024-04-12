@@ -8,10 +8,7 @@ build-backend = "setuptools.build_meta"
 name = "psel"
 version = "0.1.0"
 authors = [
-  {
-    name = "Eduard Yablonskyi",
-    email = "eduard.yablonskyy@viapath.com",
-  },
+  { name = "Eduard Yablonskyi", email = "eduard.yablonskyy@viapath.com" },
 ]
 description = "A small example package"
 readme = "README.md"
