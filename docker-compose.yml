@@ -5,4 +5,9 @@ services:
     volumes:
     - .:/var/workspace:rw
     working_dir: /var/workspace
-    command: bash
+    command:
+    - sh
+    - -c
+    - |-
+      git config --global --add safe.directory /var/workspace
+      bash
